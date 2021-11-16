@@ -4,3 +4,5 @@
 4. neues CMD Fenster im Verzeichnis für alle weiteren Befehle
 5. Route:: für Company festlegen 
 6. erste Tests ob Server aktiviert und Controller etwas anzeigt mit View('Index')
+7. Löschen der Vorinstallierten welcome.blade
+8. Erstellen des Ordners "company" im resources/view Verzeichnis
