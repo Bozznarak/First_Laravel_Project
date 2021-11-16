@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <title>Document</title>
 </head>
-<body class="bg-gradiant-to-r from-gray-100 to gray-200">
+<body class="">
 
 
     @yield('content')

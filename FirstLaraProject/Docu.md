@@ -18,3 +18,5 @@
 18. env. Datei anpassen
 19. erstellen des Company Tables
 20. DummieData über PhpMyAdmin eingefügt
+21. foreach loop in der index.blade.php eingefügt mit allen relevanten Daten der Datenbank verknüpft
+22.
