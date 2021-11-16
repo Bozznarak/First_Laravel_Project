@@ -12,4 +12,7 @@
 12. installieren von Laravel Highlighting Erweiterung
 13. verlinkung der TailwindCSS, test obs geklappt hat
 14. Tailwind funktioniert nicht,  erstmal weiter ohne Styles
-15. 
+15. anpassen der index.balde.php an die app.blade.php
+16. start von XAMPP mit SQL / Apache
+17. erstellen der Datenbank db_tenmedia
+18. env. Datei anpassen
