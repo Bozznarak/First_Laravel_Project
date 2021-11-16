@@ -7,4 +7,9 @@
 7. Löschen der Vorinstallierten welcome.blade
 8. Erstellen des Ordners "company" im resources/view Verzeichnis
 9. Routenänderung in "http://127.0.0.1:8000/company", testen der Funktion
-10.
+10. Erstellen des Layouts, layouts Verzeichnis im /view Verzeichnis
+11. app.blade.php erstellt im layouts Verzeichnis
+12. installieren von Laravel Highlighting Erweiterung
+13. verlinkung der TailwindCSS, test obs geklappt hat
+14. Tailwind funktioniert nicht,  erstmal weiter ohne Styles
+15. 
