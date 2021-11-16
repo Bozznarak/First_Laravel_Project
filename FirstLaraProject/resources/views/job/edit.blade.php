@@ -25,7 +25,16 @@
         <input style="margin-top: 50px;" type="submit" placeholder="Editieren">
 
     </form>
-
+    
+    
+    @if ($errors->any())
+        <div>
+            @foreach ($errors->all() as $error)
+                <p>{{ $error }}</p>
+            @endforeach
+        </div>
+        
+    @endif
 </div>
 
     

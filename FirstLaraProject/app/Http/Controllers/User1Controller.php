@@ -36,6 +36,10 @@ class User1Controller extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'name' => 'required|unique:user1',
+            'password' => 'required' 
+         ]);
 
         $company = User1::create([
             'name' => $request->input('name'),
