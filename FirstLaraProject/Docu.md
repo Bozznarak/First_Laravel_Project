@@ -16,3 +16,5 @@
 16. start von XAMPP mit SQL / Apache
 17. erstellen der Datenbank db_tenmedia
 18. env. Datei anpassen
+19. erstellen des Company Tables
+20. DummieData über PhpMyAdmin eingefügt

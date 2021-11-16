@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Company extends Model
 {
     use HasFactory;
+    protected $table = 'companys';
+    protected $primaryKey = 'id';
+    protected $name ='name';
+    protected $description = 'description';
 }
