@@ -19,4 +19,6 @@
 19. erstellen des Company Tables
 20. DummieData über PhpMyAdmin eingefügt
 21. foreach loop in der index.blade.php eingefügt mit allen relevanten Daten der Datenbank verknüpft
-22.
+22. create.blade.php eingefügt
+23. form input etc erstellt, POST method
+24. 

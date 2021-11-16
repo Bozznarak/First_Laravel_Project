@@ -36,7 +36,17 @@ class CompanyController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $company = new Company; // get all arguments to create a new Company
+        $company->name = $request->input('name');
+        $company->description = $request->input('description');
+        $company->save(); // save the instance "company", goes into Database Table companys
+
+        $company = Company::create([
+            'name' => $request->input('name'),
+            'description' => $request->input('description')
+        ]);
+        
+        return redirect('/company');
     }
 
     /**

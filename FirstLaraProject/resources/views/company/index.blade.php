@@ -5,7 +5,7 @@
 
 
     @foreach ($companys as $company)
-    <div style="border: 1px solid black">
+    <div>
         <h1 style="text-align: center">{{ $company->name }}</h1>
         <p style="text-align: center"> {{  $company->description }}</p>
     </div>

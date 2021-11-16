@@ -12,4 +12,5 @@ class Company extends Model
     protected $primaryKey = 'id';
     protected $name ='name';
     protected $description = 'description';
+    protected $fillable = ['name', 'description'];
 }
