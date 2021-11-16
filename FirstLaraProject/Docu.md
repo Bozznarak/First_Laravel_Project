@@ -21,4 +21,8 @@
 21. foreach loop in der index.blade.php eingefügt mit allen relevanten Daten der Datenbank verknüpft
 22. create.blade.php eingefügt
 23. form input etc erstellt, POST method
-24. 
+24. Daten können jetzt an die Datenbank übergeben werden
+25. Editieren von Datensätzen ermöglichen company/edit.blade.php
+26. Löschen von Datensätzen ermöglichen Controller::delete()
+
+---------------------------- Company soweit abgeschlossen, jetzt das selber für User und Jobs, danach der Verbindungen der Tabellen hinbekommen ----------------------------

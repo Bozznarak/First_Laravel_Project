@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Company;
+use Symfony\Component\VarDumper\Caster\RedisCaster;
 
 class CompanyController extends Controller
 {
@@ -36,10 +37,6 @@ class CompanyController extends Controller
      */
     public function store(Request $request)
     {
-        $company = new Company; // get all arguments to create a new Company
-        $company->name = $request->input('name');
-        $company->description = $request->input('description');
-        $company->save(); // save the instance "company", goes into Database Table companys
 
         $company = Company::create([
             'name' => $request->input('name'),
@@ -68,7 +65,9 @@ class CompanyController extends Controller
      */
     public function edit($id)
     {
-        //
+        $company = Company::find($id);
+
+        return view('company.edit')->with('company', $company);
     }
 
     /**
@@ -80,7 +79,12 @@ class CompanyController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $company = Company::where('id', $id)->update([
+            'name' => $request->input('name'),
+            'description' => $request->input('description')
+        ]);
+        
+        return redirect('/company');
     }
 
     /**
@@ -91,6 +95,9 @@ class CompanyController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $company = Company::find($id);
+        $company->delete();
+
+        return redirect('/company');
     }
 }
