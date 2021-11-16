@@ -20,7 +20,7 @@
         <input style="width:250px; padding-bottom:80px;margin-top: 15px;"
         type="text" placeholder="Company Beschreibung" name="description" value="{{ $company->description }}"> <br>
 
-        <input style="margin-top: 50px;" type="submit" placeholder="Erstellen">
+        <input style="margin-top: 50px;" type="submit" placeholder="Editieren">
 
     </form>
 

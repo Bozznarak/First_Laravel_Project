@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\JobController;
+use App\Http\Controllers\User1Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,3 +19,5 @@ use App\Http\Controllers\JobController;
 Route::resource('/company', CompanyController::class);
 
 Route::resource('/job', JobController::class);
+
+Route::resource('/user', User1Controller::class);

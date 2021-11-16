@@ -6,6 +6,7 @@ php artisan migrate:rollback (zum zurücksetzen der Tabellen in der Datenbank db
 DROP TABLE companys;
 DROP TABLE jobs;
 DROP TABLE users;
+DROP TABLE user1;DROP TABLE companys; DROP TABLE jobs;
 
 
 
@@ -45,6 +46,5 @@ DROP TABLE users;
 --
 28. alle ähnlichen Schritte für Jobs von Companys wiederholen
 --
-29. Löschen aller vorinstallierten Laravel-User-Sachen (MVC)
---
-30. alle ähnlichen Schritte für Users von Companys wiederholen
+29. alle ähnlichen Schritte für Users (User1) von Companys wiederholen
+30. Validate requests
