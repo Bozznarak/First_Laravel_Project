@@ -14,4 +14,4 @@ use App\Http\Controllers\CompanyController;
 |
 */
 
-Route::resource('/', CompanyController::class);
+Route::resource('/company', CompanyController::class);

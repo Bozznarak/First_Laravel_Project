@@ -6,3 +6,5 @@
 6. erste Tests ob Server aktiviert und Controller etwas anzeigt mit View('Index')
 7. Löschen der Vorinstallierten welcome.blade
 8. Erstellen des Ordners "company" im resources/view Verzeichnis
+9. Routenänderung in "http://127.0.0.1:8000/company", testen der Funktion
+10.
