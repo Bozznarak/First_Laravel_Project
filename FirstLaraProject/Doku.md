@@ -1,3 +1,15 @@
+php artisan make:model XXX -m (erstellt direkt eine Migration dazu)
+php artisan make:controller XXXController --resource (erstellt ein Controller mit mehreren Funktionen)
+
+php artisan migrate:rollback (zum zurücksetzen der Tabellen in der Datenbank db_tenmedia)
+
+DROP TABLE companys;
+DROP TABLE jobs;
+DROP TABLE users;
+
+
+
+
 1. Start mit installation von NPM/Node.js, TailwindCSS
 2. Erstellen der Company Seite über MVC / Model View Controller + Migration (php artisan "php artisan make:controller CompanyController --resource", "php artisan make:model Company -m")
 3. Start "php artisan serve" in der CMD
@@ -25,4 +37,14 @@
 25. Editieren von Datensätzen ermöglichen company/edit.blade.php
 26. Löschen von Datensätzen ermöglichen Controller::delete()
 
----------------------------- Company soweit abgeschlossen, jetzt das selber für User und Jobs, danach der Verbindungen der Tabellen hinbekommen ----------------------------
+------------------------------------------------------------------------------------
+ Company soweit abgeschlossen,  für Users und Jobs alles ähnlich aufbauen, danach der Verbindungen der Tabellen hinbekommen (Mehrfachbeziehungen aufheben) 
+------------------------------------------------------------------------------------
+
+27. DROP TABLE companys; in PhpMyAdmin
+--
+28. alle ähnlichen Schritte für Jobs von Companys wiederholen
+--
+29. Löschen aller vorinstallierten Laravel-User-Sachen (MVC)
+--
+30. alle ähnlichen Schritte für Users von Companys wiederholen

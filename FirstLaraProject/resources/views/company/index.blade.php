@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div>
-    <a href="company/create"> Create a new Company</a>
+    <a href="company/create"> Erstelle eine neue Company</a>
     <br>
 
 
