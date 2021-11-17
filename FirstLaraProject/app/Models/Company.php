@@ -12,4 +12,10 @@ class Company extends Model
     protected $primaryKey = 'id';
     protected $fillable = ['name', 'description'];
     public $timestamps = false;
+
+    public function companys()
+    {
+        return $this->hasMany(CompanyModel::class);
+    }
+
 }

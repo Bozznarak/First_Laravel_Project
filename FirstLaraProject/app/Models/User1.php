@@ -14,4 +14,8 @@ class User1 extends Model
                         'name',
                         'password'
                     ];
+    public function user1_company()
+    {
+        return $this->hasMany(User1Model::class);
+    }
 }

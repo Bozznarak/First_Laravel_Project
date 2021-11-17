@@ -14,8 +14,17 @@ class CreateUserCompanyTable extends Migration
     public function up()
     {
         Schema::create('user_company', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id('id');
+            $table->unsignedInteger('id_company');
+            $table->foreign('id_company')->references('id')->on('company')->onDelete('cascade');
+
+            $table->unsignedInteger('id_user');
+            $table->foreign('id_user')->references('id')->on('user1')->onDelete('cascade');
+
+            // $table->unsignedInteger('company_id');
+            // $table->foreign('company_id')->references('id')->on('companys')->onDelete('cascade');
+
+
         });
     }
 
