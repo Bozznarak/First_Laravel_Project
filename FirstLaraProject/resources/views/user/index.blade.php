@@ -9,6 +9,7 @@
     <a href="user/create"> Erstelle eines neuen Users</a>
     <br>
 
+    <div style="text-align: center"><h1>Users</h1></div>
 
     @foreach ($users as $user)
     <div>

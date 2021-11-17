@@ -4,7 +4,7 @@
     <a href="job/create"> Erstelle einen neuen Job</a>
     <br>
 
-
+    <div style="text-align: center"><h1>Jobs</h1></div>
     @foreach ($jobs as $job)
     <div>
         <h1 style="text-align: center;">{{ $job->name }}</h1>

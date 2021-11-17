@@ -1,12 +1,18 @@
+um das Nachzubauen sind eingige Befehle notwendig.
+
+1. php artisan migrate
+2. php artisan tinker -> \App\Models\Company::factory()->count(10)->create(); \App\Models\User1::factory()->count(10)->create(); \App\Models\Job::factory()->count(10)->create();
+
+
+
+
 php artisan make:model XXX -m (erstellt direkt eine Migration dazu)
 php artisan make:controller XXXController --resource (erstellt ein Controller mit mehreren Funktionen)
 
 php artisan migrate:rollback (zum zurücksetzen der Tabellen in der Datenbank db_tenmedia)
 
-DROP TABLE companys;
-DROP TABLE jobs;
-DROP TABLE users;
-DROP TABLE user1;DROP TABLE companys; DROP TABLE jobs;
+
+DROP DATABASE db_tenmedia;
 
 
 
@@ -48,3 +54,11 @@ DROP TABLE user1;DROP TABLE companys; DROP TABLE jobs;
 --
 29. alle ähnlichen Schritte für Users (User1) von Companys wiederholen
 30. Validate requests
+
+
+----------------------------
+Nun die Tabellen in Verbindung bringen
+----------------------------
+
+31. bei der Job Tabelle die foreign_keys:" fk_user1 und fk_company" hinzufügen
+32. Verbindung testen

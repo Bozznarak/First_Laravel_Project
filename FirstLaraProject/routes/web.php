@@ -21,3 +21,7 @@ Route::resource('/company', CompanyController::class);
 Route::resource('/job', JobController::class);
 
 Route::resource('/user', User1Controller::class);
+
+Route::get('/', function () {
+    return view('index');
+});

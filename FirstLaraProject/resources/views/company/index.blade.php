@@ -4,10 +4,11 @@
     <a href="company/create"> Erstelle eine neue Company</a>
     <br>
 
+    <div style="text-align: center"><h1>Companys</h1></div>
 
     @foreach ($companys as $company)
     <div>
-        <h1 style="text-align: center;">{{ $company->name }}</h1>
+        <h2 style="text-align: center;">{{ $company->name }}</h1>
         <p style="text-align: center;"> {{  $company->description }}</p>
         <p style="text-align: center;"><a href="company/{{ $company->id }}/edit"> Editiere  {{ $company->name}}</a></p>
 
