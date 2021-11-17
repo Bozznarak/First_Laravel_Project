@@ -11,4 +11,5 @@ class Company extends Model
     protected $table = 'companys';
     protected $primaryKey = 'id';
     protected $fillable = ['name', 'description'];
+    public $timestamps = false;
 }
