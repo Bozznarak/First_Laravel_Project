@@ -12,4 +12,8 @@ class Company extends Model
     protected $primaryKey = 'id';
     protected $fillable = ['name', 'description'];
     public $timestamps = false;
+    public function user()
+    {
+        return $this->belongsToMany(User1Model::class);
+    }
 }

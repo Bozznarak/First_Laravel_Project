@@ -14,4 +14,9 @@ class User1 extends Model
                         'name',
                         'password'
                     ];
+
+    public function companys()
+    {
+        return $this->belongsToMany(CompanyModel::class);
+    }
 }
