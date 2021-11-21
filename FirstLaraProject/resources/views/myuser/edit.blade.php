@@ -8,13 +8,13 @@
 
 <div>
 
-    <form action="/myuser/{{ $myuser->id }}" method="POST">
+    <form action="/myuser/{{ $myUser->id }}" method="POST">
 
         @csrf
         @method('PUT')
 
         <input class="shadow border-2 mb-5"
-        type="text" placeholder="Benutzername" name="name" value="{{ $myuser->name}}"><br>
+        type="text" placeholder="Benutzername" name="name" value="{{ $myUser->name}}"><br>
 
 {{-- password müsste gehasht werden, aus Übersichts und Benutzungszwecken wird hier darauf verzichtet --}}
 

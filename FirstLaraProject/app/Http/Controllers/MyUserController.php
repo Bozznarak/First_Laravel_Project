@@ -66,7 +66,7 @@ class MyUserController extends Controller
     {
         $myUser = MyUser::find($id);
 
-        return view('myuser.edit')->with('myuser', $myUser);
+        return view('myuser.edit')->with('myUser', $myUser);
     }
 
     /**
@@ -79,7 +79,7 @@ class MyUserController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'name' => 'required|unique:myuser'
+            'name' => 'required|unique:my_users'
         ]);
 
         $myUser = MyUser::where('id', $id)->update([
