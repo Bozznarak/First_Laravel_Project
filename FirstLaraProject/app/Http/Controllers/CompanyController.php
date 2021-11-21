@@ -15,8 +15,8 @@ class CompanyController extends Controller
      */
     public function index()
     {
-        $companys = Company::all();
-        return view('company.index', ['companys' => $companys]);
+        $companies = Company::all();
+        return view('company.index', ['companies' => $companies]);
     }
 
     /**
@@ -39,7 +39,7 @@ class CompanyController extends Controller
     {
 
         $request->validate([
-           'name' => 'required|unique:companys',
+           'name' => 'required|unique:companies',
            'description' => 'required' 
         ]);
 

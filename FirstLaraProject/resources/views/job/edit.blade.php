@@ -3,9 +3,9 @@
 
 {{-- only should be shown when the User equals the fkuser(foreign Key) of this job! --}} 
 
-<div style="border: 1px solid black">
-    <h1 style="text-align: center">Editiere einen Job</h1>
-    <p style="text-align: center"></p>
+<div>
+    <h1 class="text-center text-5xl font-bold underline mb-15">Editiere einen Job</h1>
+    <p></p>
 </div>
 
 <div>
@@ -15,14 +15,14 @@
         @csrf
         @method('PUT')
 
-        <input style="width:250px;margin-top: 50px;"
+        <input class="shadow border-2 mb-5"
         type="text" placeholder="job Name" name="name" value="{{ $job->name }}"><br>
 
 
-        <input style="width:250px; padding-bottom:80px;margin-top: 15px;"
+        <input class="shadow border-2 mb-5"
         type="text" placeholder="Job Beschreibung" name="description" value="{{ $job->description }}"> <br>
 
-        <input style="margin-top: 50px;" type="submit" placeholder="Editieren">
+        <input type="submit" placeholder="Editieren">
 
     </form>
     
