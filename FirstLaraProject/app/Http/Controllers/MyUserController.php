@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\User1;
+use App\Models\MyUser;
 
-class User1Controller extends Controller
+class MyUserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class User1Controller extends Controller
      */
     public function index()
     {
-        $users = User1::all();
-        return view('user.index', ['users' => $users]);
+        $myUsers = MyUser::all();
+        return view('myuser.index', ['myUsers' => $myUsers]);
     }
 
     /**
@@ -25,7 +25,7 @@ class User1Controller extends Controller
      */
     public function create()
     {
-        return view('user.create');
+        return view('myuser.create');
     }
 
     /**
@@ -36,17 +36,13 @@ class User1Controller extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'name' => 'required|unique:user1',
-            'password' => 'required' 
-         ]);
+        $request->validate(['name' => 'required|unique:my_users']);
 
-        $company = User1::create([
-            'name' => $request->input('name'),
-            'password' => $request->input('password')
+        $myUser = MyUser::create([
+            'name' => $request->input('name')
         ]);
-        
-        return redirect('/user');
+
+        return redirect('/myuser');
     }
 
     /**
@@ -68,9 +64,9 @@ class User1Controller extends Controller
      */
     public function edit($id)
     {
-        $user = User1::find($id);
+        $myUser = MyUser::find($id);
 
-        return view('user.edit')->with('user', $user);
+        return view('myuser.edit')->with('myUser', $myUser);
     }
 
     /**
@@ -82,12 +78,15 @@ class User1Controller extends Controller
      */
     public function update(Request $request, $id)
     {
-        $company = User1::where('id', $id)->update([
-            'name' => $request->input('name'),
-            'password' => $request->input('password')
+        $request->validate([
+            'name' => 'required|unique:my_users'
         ]);
-        
-        return redirect('/user');
+
+        $myUser = MyUser::where('id', $id)->update([
+            'name' => $request->input('name')
+        ]);
+
+        return redirect('/myuser');
     }
 
     /**
@@ -98,9 +97,9 @@ class User1Controller extends Controller
      */
     public function destroy($id)
     {
-        $company = User1::find($id);
-        $company->delete();
+        $myUser = MyUser::find($id);
+        $myUser->delete();
 
-        return redirect('/user');
+        return redirect('/myuser');
     }
 }

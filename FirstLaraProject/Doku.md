@@ -1,8 +1,10 @@
 um das Nachzubauen sind eingige Befehle notwendig.
 
-1. php artisan migrate
-2. php artisan tinker -> \App\Models\Company::factory()->count(10)->create(); \App\Models\User1::factory()->count(10)->create(); \App\Models\Job::factory()->count(10)->create();
-
+TailwindCSS install:
+composer require laravel-frontend-presets/tailwindcss --dev
+npm install laravel-mix@latest 
+npm clean-install  
+npm install && npm run dev
 
 
 

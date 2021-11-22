@@ -11,4 +11,5 @@ class Job extends Model
         protected $table = 'jobs';
         protected $primaryKey = 'id';
         protected $fillable = ['name', 'description'];
+        public $timestamps = false;
 }

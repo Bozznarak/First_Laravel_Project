@@ -8,15 +8,15 @@
     <title>Document</title>
 </head>
 
-<nav style="margin: 20px 0px 50px 0px">
+<nav class="ml-15 mt-15 mb-15">
     <ul>
-        <li><a href="http://127.0.0.1:8000/job">Hier der weg zu Jobs</a></li><br>
-        <li><a href="http://127.0.0.1:8000/company">Hier der Weg zu Company</a></li><br>
-        <li><a href="http://127.0.0.1:8000/user">Hier der Weg zu User</a></li>
+        <li><a class="hover:bg-blue-700 underline" href="http://127.0.0.1:8000/job">Hier der weg zu Jobs</a></li><br>
+        <li><a class="hover:bg-blue-700 underline" href="http://127.0.0.1:8000/company">Hier der Weg zu Company</a></li><br>
+        <li><a class="hover:bg-blue-700 underline" href="http://127.0.0.1:8000/myuser">Hier der Weg zu User</a></li>
     </ul>
 </nav>
 
-<body class="">
+<body class="ml-15">
 
 
     @yield('content')

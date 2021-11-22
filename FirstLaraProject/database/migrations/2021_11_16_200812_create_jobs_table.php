@@ -15,16 +15,8 @@ class CreateJobsTable extends Migration
     {
         Schema::create('jobs', function (Blueprint $table) {
             $table->increments('id');
-            
             $table->string('name');
             $table->longText('description');
-            $table->timestamps();
-
-            // something like this
-            // $table->unsignedInteger('company_id');
-            // $table->foreign('company_id')->references('id')->on('companys')->onDelete('cascade');
-
-            //fkuser
         });
     }
 
